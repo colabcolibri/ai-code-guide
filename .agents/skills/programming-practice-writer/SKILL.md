@@ -52,6 +52,95 @@ intended_agents:
 
 Use `related: []` when no relationship exists yet. Use `intended_agents` only for likely consumers, not as a promise that those agents exist.
 
+## Controlled Vocabulary
+
+Use these lists as defaults, not hard limits. Prefer existing values when they fit; create a new value only when it is clearer than forcing a bad match.
+
+### domain
+
+- `database`: SQL, data modeling, migrations, indexing, transactions, query performance, data integrity.
+- `backend`: APIs, services, background jobs, domain logic, server-side integration patterns.
+- `frontend`: UI architecture, state management, rendering, accessibility, forms, client-side performance.
+- `testing`: unit, integration, contract, E2E, fixtures, test data, regression strategy.
+- `security`: authentication, authorization, secrets, input handling, isolation, secure defaults.
+- `architecture`: system design, boundaries, modularity, coupling, scalability, resilience.
+- `devops`: CI/CD, deployment, observability, runtime operations, environments, infrastructure.
+- `data`: analytics, pipelines, modeling, quality checks, lineage, warehousing.
+- `ai`: LLM usage, retrieval, evaluation, prompting, agent workflows, AI safety in code.
+- `general`: cross-cutting engineering practices that do not belong to one technical domain.
+
+### category
+
+Common categories by domain:
+
+- `database`: `search`, `indexing`, `query-performance`, `transactions`, `migrations`, `schema-design`, `constraints`, `rls`, `backup-restore`, `observability`.
+- `backend`: `api-design`, `validation`, `error-handling`, `auth`, `background-jobs`, `caching`, `integration`, `concurrency`, `idempotency`.
+- `frontend`: `component-design`, `state-management`, `forms`, `accessibility`, `performance`, `routing`, `data-fetching`, `design-system`.
+- `testing`: `unit-testing`, `integration-testing`, `e2e-testing`, `contract-testing`, `test-data`, `mocking`, `coverage-strategy`.
+- `security`: `authentication`, `authorization`, `secrets`, `input-sanitization`, `dependency-security`, `tenant-isolation`, `auditability`.
+- `architecture`: `modularity`, `boundaries`, `event-driven`, `scalability`, `resilience`, `trade-off-analysis`, `decision-records`.
+- `devops`: `ci`, `cd`, `deployments`, `observability`, `logging`, `metrics`, `alerts`, `environment-config`.
+- `data`: `etl`, `elt`, `data-quality`, `analytics-modeling`, `governance`, `lineage`, `warehouse-design`.
+- `ai`: `retrieval`, `evaluation`, `prompting`, `agent-reference`, `tool-use`, `structured-output`, `guardrails`.
+- `general`: `code-review`, `documentation`, `naming`, `refactoring`, `debugging`, `maintainability`.
+
+### status
+
+- `draft`: useful but not yet reviewed or proven across more than one context.
+- `stable`: reviewed and safe to use as a default reference.
+- `proven`: repeatedly used or validated in real projects.
+
+### tags
+
+Tags should be lowercase kebab-case. Prefer concrete technologies, practices, and failure modes:
+
+- technologies: `postgresql`, `react`, `typescript`, `nodejs`, `python`, `stripe`, `redis`.
+- practices: `full-text-search`, `indexing`, `rate-limiting`, `idempotency`, `pagination`, `accessibility`.
+- qualities: `performance`, `security`, `reliability`, `maintainability`, `observability`, `developer-experience`.
+- failure modes: `n-plus-one`, `race-condition`, `slow-query`, `stale-cache`, `injection-risk`, `flaky-test`.
+
+Avoid vague tags like `best-practices`, `important`, `misc`, or `advanced`.
+
+### applies_to
+
+Use human-readable strings for technologies, contexts, or situations:
+
+- `"PostgreSQL"`
+- `"user-facing search"`
+- `"multi-tenant applications"`
+- `"React forms"`
+- `"public API endpoints"`
+- `"background job processing"`
+
+### related
+
+Use relative paths to source documents when a relationship is known. Keep `related: []` when none is known yet. Do not invent relationships just to fill the field.
+
+### intended_use
+
+Use one or more:
+
+- `human-reference`: primarily useful for engineers reading the guide.
+- `agent-reference`: useful as retrieved context for coding agents.
+- `code-review-reference`: useful during implementation review.
+- `implementation-reference`: useful while building a feature.
+- `troubleshooting-reference`: useful when diagnosing a bug, incident, or performance issue.
+
+### intended_agents
+
+Use likely consumer labels only, not promises that the repo contains these agents:
+
+- `code-review`
+- `backend`
+- `frontend`
+- `database`
+- `security`
+- `testing`
+- `architecture`
+- `devops`
+- `data`
+- `ai`
+
 ## Document Shape
 
 Use this structure for new references unless the user provides a stronger local convention:
@@ -76,10 +165,10 @@ Use this structure for new references unless the user provides a stronger local 
 - Make examples executable or close to executable.
 - Use visual explanations when helpful: Mermaid `flowchart`, `sequenceDiagram`, `stateDiagram`, `classDiagram`, `erDiagram`, C4-style diagrams in Mermaid, decision tables, timelines, and compact ASCII diagrams are acceptable.
 - Prefer Mermaid `erDiagram` for database entity relationships and Mermaid `flowchart` or `sequenceDiagram` for request/query flows.
-- Use neutral entities such as `usuarios`, `produtos`, `pedidos`, `contatos`, `documents`, `orders`, or `customers`.
-- Replace internal authorization helpers with generic descriptions such as "função de autorização da aplicação".
+- Use neutral entities such as `users`, `products`, `contacts`, `documents`, `orders`, or `customers`.
+- Replace internal authorization helpers with generic descriptions such as "application authorization function".
 - Do not cite private repositories, internal paths, migrations, tickets, incidents, or PRs in the main body.
-- If local context is useful, put it in an optional appendix named "Notas locais".
+- If local context is useful, put it in an optional appendix named "Local Notes".
 - Keep checklist items actionable and objectively verifiable.
 
 ## Quality Bar
