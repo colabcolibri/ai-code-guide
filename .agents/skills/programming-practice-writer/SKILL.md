@@ -158,7 +158,7 @@ Use this structure for new references unless the user provides a stronger local 
 
 ## Writing Rules
 
-- Write in Portuguese unless the source material or target audience clearly requires English.
+- Always write source documents in English, regardless of the source material language.
 - Use a title specific to the problem or practice, not a generic title like "Boas práticas".
 - Use a readable kebab-case filename derived from the title.
 - Prefer "prefira", "evite", "use quando" and "trade-off" over absolute claims.
