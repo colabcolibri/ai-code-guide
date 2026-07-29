@@ -14,7 +14,9 @@ The only agent-facing asset in this repository is a helper skill for writing new
 
 | Document | Domain | Main Use |
 | -------- | ------ | -------- |
+| [Horizontal Scaling and Load Balancing Best Practices](architecture/horizontal-scaling-and-load-balancing-best-practices.md) | Architecture | Vertical vs horizontal scaling, load balancers, L4/L7 trade-offs, algorithms, and operational validation |
 | [Server-Sent Events Best Practices](backend/server-sent-events-best-practices.md) | Backend | SSE, EventSource, real-time updates, Redis Pub/Sub fanout, connection management, and WebSocket trade-offs |
+| [Database Sharding Best Practices](database/database-sharding-best-practices.md) | Database | Horizontal database scaling, shard keys, routing, rebalancing, distributed queries, and sharding trade-offs |
 | [PostgreSQL Text Search Best Practices](database/postgresql-text-search-best-practices.md) | Database | Full Text Search, `pg_trgm`, GIN indexes, ranking, performance, and search safety |
 
 ## Principles
