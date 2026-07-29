@@ -28,7 +28,7 @@ The only agent-facing asset in this repository is a helper skill for writing new
 - Include concrete examples and objective validation steps.
 - Document anti-patterns because they help agents avoid common regressions.
 - Write for both humans and agents: predictable structure, clear language, and low coupling.
-- Track source inspiration separately from official references so readers can understand where a guide started without making the guide dependent on that source.
+- Credit the original source of inspiration separately from official references, as a matter of respect and attribution, while keeping each guide useful as a standalone reference.
 
 ## File Conventions
 
@@ -67,7 +67,7 @@ Keep metadata useful, not exhaustive. Prefer stable tags and relationships over 
 
 ## Source Attribution
 
-When a guide is inspired by an article, video, talk, thread, code review, incident, or documentation page, include a short source note in the guide.
+When a guide is inspired by an article, video, talk, thread, code review, incident, or documentation page, include a short source note in the guide. This is meant to give credit to the original material that sparked the guide, even when the final document is rewritten, expanded, and made project-agnostic.
 
 Use this shape:
 
@@ -85,5 +85,9 @@ This guide was inspired by:
 
 Keep source inspiration separate from references:
 
-- `Source Inspiration` explains where the guide originated.
+- `Source Inspiration` credits the material that inspired or originated the guide.
 - `References` lists authoritative or supporting technical material.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
