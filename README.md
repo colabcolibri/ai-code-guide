@@ -20,6 +20,7 @@ The only agent-facing asset in this repository is a helper skill for writing new
 | [Server-Sent Events Best Practices](backend/server-sent-events-best-practices.md) | Backend | SSE, EventSource, real-time updates, Redis Pub/Sub fanout, connection management, and WebSocket trade-offs |
 | [Database Sharding Best Practices](database/database-sharding-best-practices.md) | Database | Horizontal database scaling, shard keys, routing, rebalancing, distributed queries, and sharding trade-offs |
 | [PostgreSQL Text Search Best Practices](database/postgresql-text-search-best-practices.md) | Database | Full Text Search, `pg_trgm`, GIN indexes, ranking, performance, and search safety |
+| [Supabase Row Level Security Best Practices](database/supabase-row-level-security-best-practices.md) | Database | RLS policies, Supabase Auth roles, `USING` vs `WITH CHECK`, multi-tenant authorization, functions, views, storage, and performance |
 
 ## Principles
 
