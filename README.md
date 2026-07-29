@@ -1,5 +1,7 @@
 # AI Code Guide
 
+![AI Code Guide source anatomy](assets/ai-code-guide-source-anatomy.png)
+
 Practical, project-agnostic programming references for humans and AI coding agents.
 
 ## Purpose
