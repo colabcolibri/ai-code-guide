@@ -1,0 +1,4 @@
+interface:
+  display_name: "Programming Practice Writer"
+  short_description: "Write reusable programming practice references"
+  default_prompt: "Use $programming-practice-writer to turn this content into an agnostic programming practice reference."
