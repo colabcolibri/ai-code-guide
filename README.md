@@ -14,6 +14,7 @@ The only agent-facing asset in this repository is a helper skill for writing new
 
 | Document | Domain | Main Use |
 | -------- | ------ | -------- |
+| [Server-Sent Events Best Practices](backend/server-sent-events-best-practices.md) | Backend | SSE, EventSource, real-time updates, Redis Pub/Sub fanout, connection management, and WebSocket trade-offs |
 | [PostgreSQL Text Search Best Practices](database/postgresql-text-search-best-practices.md) | Database | Full Text Search, `pg_trgm`, GIN indexes, ranking, performance, and search safety |
 
 ## Principles
