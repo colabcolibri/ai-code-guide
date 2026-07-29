@@ -18,6 +18,7 @@ The only agent-facing asset in this repository is a helper skill for writing new
 | -------- | ------ | -------- |
 | [Horizontal Scaling and Load Balancing Best Practices](architecture/horizontal-scaling-and-load-balancing-best-practices.md) | Architecture | Vertical vs horizontal scaling, load balancers, L4/L7 trade-offs, algorithms, and operational validation |
 | [Server-Sent Events Best Practices](backend/server-sent-events-best-practices.md) | Backend | SSE, EventSource, real-time updates, Redis Pub/Sub fanout, connection management, and WebSocket trade-offs |
+| [Authentication System Design Best Practices](security/authentication-system-design-best-practices.md) | Security | Build-vs-buy auth decisions, password storage, sessions, cookies, recovery, MFA, abuse protection, and operational controls |
 | [Database Sharding Best Practices](database/database-sharding-best-practices.md) | Database | Horizontal database scaling, shard keys, routing, rebalancing, distributed queries, and sharding trade-offs |
 | [PostgreSQL Text Search Best Practices](database/postgresql-text-search-best-practices.md) | Database | Full Text Search, `pg_trgm`, GIN indexes, ranking, performance, and search safety |
 | [Supabase Row Level Security Best Practices](database/supabase-row-level-security-best-practices.md) | Database | RLS policies, Supabase Auth roles, `USING` vs `WITH CHECK`, multi-tenant authorization, functions, views, storage, and performance |
